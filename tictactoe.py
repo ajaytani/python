@@ -1,4 +1,6 @@
 from IPython.display import clear_output
+import random
+
 def user_choice():
     # This original choice value can be anything that isn't an integer
     choice = 'wrong'
@@ -16,9 +18,6 @@ def user_choice():
 
     # We can convert once the while loop above has confirmed we have a digit.
     return int(choice)
-
-
-from IPython.display import clear_output
 
 
 def display_board(board):
@@ -65,7 +64,6 @@ def win_check(board, mark):
 test_board = ['#','X','O','X','O','X','O','X','O','X']
 
 
-import random
 
 def choose_first():
     if random.randint(0, 1) == 0:
